@@ -1,13 +1,53 @@
 <!DOCTYPE html>
 <html lang="et">
-    
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/style.css">
-        <title>Veebileht</title>
-    </head>
-    <body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Veebileht</title>
+  </head>
 
-    </html>body>
+  <body>
+    <header>
+      <h1>Üheleheline Õppeveeb</h1>
+      <nav aria-label="Põhinavigatsioon">
+        <a href="#sissejuhatus">Sissejuhatus</a>
+        <a href="#teooria">Teooria</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+    </header>
+    <img
+      src="/images/pilt.webp"
+      alt="Õppeveebi kangelaspilt"
+      width="1200"
+      height="600"
+      fetchpriority="high"
+    />
+    <main>
+      <section id="sissejuhatus">
+        <h2>Sissejuhatus</h2>
+        <p>Mis on HTML?</p>
+        <a href="galerii.html">
+          <img src="/images/piltt.webp" alt="sas" width="400" height="300" />
+        </a>
+      </section>
+      <section id="teooria">
+        <h2>Teooria</h2>
+        <p>HTML tähendus.</p>
+        <video controls width="640" height="360" poster="/images/video.mp4">
+          <source src="/images/video.mp4" type="video/webm" />
+          <source src="/images/intro.mp4" type="video/mp4" />
+          <track
+            src="assets/media/intro.et.vtt"
+            kind="captions"
+            srclang="et"
+            label="Eesti"
+            default
+          />
+        </video>
+      </section>
+      <section></section>
+    </main>
+    <footer>© 2025</footer>
+  </body>
 </html>

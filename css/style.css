@@ -1,0 +1,23 @@
+header {
+  background-color: red;
+}
+body {
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  line-height: 2;
+}
+h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+h2 {
+  font-size: 1.5rem;
+  margin: 1rem 0 0.5rem;
+}
+p {
+  margin-bottom: 1rem;
+}
+.small {
+  font-size: 0.875rem;
+  color: gray;
+}
