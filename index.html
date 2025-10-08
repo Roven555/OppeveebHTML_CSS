@@ -1,53 +1,117 @@
 <!DOCTYPE html>
 <html lang="et">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Veebileht</title>
-  </head>
 
-  <body>
-    <header>
-      <h1>Üheleheline Õppeveeb toru pede</h1>
-      <nav aria-label="Põhinavigatsioon">
-        <a href="#sissejuhatus">Sissejuhatus</a>
-        <a href="#teooria">Teooria</a>
-        <a href="#kontakt">Kontakt</a>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Üheleheline Õppeveeb</title>
+</head>
+
+<body>
+  <header>
+    <h1 class="text-white">Üheleheline Õppeveeb</h1>
+    <nav aria-label="Põhinavigatsioon">
+      <a class="text-white" href="#sissejuhatus">Sissejuhatus</a>
+      <a class="text-white" href="#teooria">Teooria</a>
+      <a class="text-white" href="#kontakt">Kontakt</a>
+    </nav>
+  </header>
+
+  <!-- HERO PICTURE -->
+  <section class="hero">
     <img
-      src="/images/pilt.webp"
+      src="images/hero.jpg"
       alt="Õppeveebi kangelaspilt"
-      width="1200"
+      width="800"
       height="600"
       fetchpriority="high"
     />
-    <main>
-      <section id="sissejuhatus">
-        <h2>Sissejuhatus</h2>
-        <p>Mis on HTML?</p>
+  </section>
+
+  <main>
+    <section id="sissejuhatus">
+      <h2>Sissejuhatus</h2>
+      <p class="highlight">Aga mis siis ikkagi see HTML on? Saan lahti</p>
+      <p >See pole highlight</p>
+      <div class="image-links">
         <a href="galerii.html">
-          <img src="/images/piltt.webp" alt="sas" width="400" height="300" />
+          <img src="images/piltt.webp" alt="Õppegalerii pilt" width="400" height="300" />
         </a>
-      </section>
-      <section id="teooria">
-        <h2>Teooria</h2>
-        <p>HTML tähendus.</p>
-        <video controls width="640" height="360" poster="/images/video.mp4">
-          <source src="/images/video.mp4" type="video/webm" />
-          <source src="/images/intro.mp4" type="video/mp4" />
-          <track
-            src="assets/media/intro.et.vtt"
-            kind="captions"
-            srclang="et"
-            label="Eesti"
-            default
+
+        <a href="https://unsplash.com" target="_blank" rel="noopener noreferrer">
+          <img
+            src="https://images.unsplash.com/photo-1503264116251-35a269479413"
+            alt="Unsplash näidispilt"
+            width="400"
+            height="300"
+            loading="lazy"
           />
-        </video>
-      </section>
-      <section></section>
-    </main>
-    <footer>© 2025</footer>
-  </body>
+        </a>
+      </div>
+    </section>
+
+    <section id="teooria">
+      <h2>Teooria</h2>
+      <p>Ma armastan HTML see on lahe frontendi proge keel. Kui HTML oleks naine ma nikks teda tussi ja perse</p>
+      <video controls width="640" height="360" poster="images/video-thumb.webp">
+        <source src="images/video.mp4" type="video/mp4" />
+        <track src="assets/media/intro.et.vtt" kind="captions" srclang="et" label="Eesti" default />
+      </video>
+    </section>
+
+    <section id="kaardid">
+  <h2>Õppekaardid</h2>
+  <div class="card-row">
+    <div class="card">
+      <h3>Roven pede</h3>
+      <p>Mulle meeldivad neegrid</p>
+    </div>
+    <div class="card">
+      <h3>Roven tolgus</h3>
+      <p>Mul on autism ja kardan linna peal kondida</p>
+    </div>
+    <div class="card">
+      <h3>Roven teeb kanepit</h3>
+      <p>Suitsetan 24/7 sitaks hea</p>
+    </div>
+  </div>
+</section>
+
+    <section id="kontakt">
+      <h2>Kontakt</h2>
+      <p>
+        Kirjuta meile aadressil:
+        <a href="mailto:info@oppeveeb.ee">info@oppeveeb.ee</a>
+      </p>
+
+      <!-- INLINE SVG IKOON -->
+      <svg
+        role="img"
+        aria-labelledby="ic-title ic-desc"
+        width="48"
+        height="48"
+        viewBox="0 0 24 24"
+        class="info-icon"
+      >
+        <title id="ic-title">Info ikoon</title>
+        <desc id="ic-desc">Ringis i-täht</desc>
+        <circle cx="12" cy="12" r="10" fill="currentColor" />
+        <text
+          x="12"
+          y="16"
+          text-anchor="middle"
+          font-size="12"
+          fill="#ffffff"
+          font-family="Arial, sans-serif"
+        >
+          i
+        </text>
+      </svg>
+    </section>
+  </main>
+
+  <footer>© 2025 Üheleheline Õppeveeb</footer>
+</body>
+
 </html>
