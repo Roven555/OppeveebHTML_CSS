@@ -9,18 +9,18 @@
 
   <body>
     <header>
-      <h1 class="text-white">Üheleheline Õppeveeb</h1>
+      <h1 class="valge-tekst">Üheleheline Õppeveeb</h1>
       <nav aria-label="Põhinavigatsioon">
-        <a class="text-white" href="#sissejuhatus">Sissejuhatus</a>
-        <a class="text-white" href="#teooria">Teooria</a>
-        <a class="text-white" href="#kontakt">Kontakt</a>
+        <a class="valge-tekst" href="#sissejuhatus">Sissejuhatus</a>
+        <a class="valge-tekst" href="#teooria">Teooria</a>
+        <a class="valge-tekst" href="#kontakt">Kontakt</a>
       </nav>
     </header>
 
     <section class="hero">
       <img
-        src="images/hero.jpg"
-        alt="Õppeveebi kangelaspilt"
+        src="images/lovi.jpg"
+        alt="Lõvi pilt"
         width="800"
         height="600"
         fetchpriority="high"
@@ -35,31 +35,16 @@
           millega määratakse veebilehe struktuur ja sisu — näiteks pealkirjad,
           lõigud, lingid, pildid ja tabelid.
         </p>
-        <p></p>
-        <div class="image-links">
-          <a href="galerii.html">
-            <img
-              src="images/piltt.webp"
-              alt="Õppegalerii pilt"
-              width="400"
-              height="300"
-            />
-          </a>
 
-          <a
-            href="https://unsplash.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="https://images.unsplash.com/photo-1503264116251-35a269479413"
-              alt="Unsplash näidispilt"
-              width="400"
-              height="300"
-              loading="lazy"
-            />
-          </a>
-        </div>
+        <img src="images/lill.jpg" alt="Lille pilt" width="400" height="300" />
+
+        <img
+          src="images/loodus.jpg"
+          alt="Looduse pilt"
+          width="400"
+          height="300"
+          loading="lazy"
+        />
       </section>
 
       <section id="teooria">
@@ -76,24 +61,17 @@
           poster="images/video-thumb.webp"
         >
           <source src="images/video.mp4" type="video/mp4" />
-          <track
-            src="assets/media/intro.et.vtt"
-            kind="captions"
-            srclang="et"
-            label="Eesti"
-            default
-          />
         </video>
       </section>
 
       <section id="kaardid">
         <h2>Õppekaardid</h2>
-        <div class="card-row">
-          <div class="card">
+        <div class="kaardi-rida">
+          <div class="kaart">
             <h3>HTML</h3>
-            <p>HTML-ütleb brauserile, mida veebilehel näidata.</p>
+            <p>HTML ütleb brauserile, mida veebilehel näidata.</p>
           </div>
-          <div class="card">
+          <div class="kaart">
             <h3>HTMLi tähendus</h3>
             <p>
               HTML (HyperText Markup Language) on veebilehtede märgistuskeel,
@@ -108,20 +86,19 @@
         <h2>Kontakt</h2>
         <p>
           Kirjuta meile aadressil:
-          <a href="mailto:roven.piho@voco.ee">roven.piho@voco.ee</a>
+          <a href="roven.piho@voco.ee">roven.piho@voco.ee</a>
         </p>
 
         <svg
           role="img"
-          aria-labelledby="ic-title ic-desc"
           width="48"
           height="48"
           viewBox="0 0 24 24"
-          class="info-icon"
+          class="info-ikoon"
         >
-          <title id="ic-title">Info ikoon</title>
-          <desc id="ic-desc">Ringis i-täht</desc>
-          <circle cx="12" cy="12" r="10" fill="currentColor" />
+          <title id="title">Info ikoon</title>
+          <desc id="kirjeldus">I-täht</desc>
+          <circle cx="12" cy="12" r="10"  />
           <text
             x="12"
             y="16"
